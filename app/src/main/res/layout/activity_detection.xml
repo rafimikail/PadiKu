@@ -17,14 +17,52 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
-        android:layout_marginEnd="194dp"
-        android:layout_marginBottom="301dp"
-        android:text="Detection"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Home"
+        android:textColor="#5F812C"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></ImageView>
+
+    <Button
+        android:id="@+id/button"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="Predict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Upload Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
